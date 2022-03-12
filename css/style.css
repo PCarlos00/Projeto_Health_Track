@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Manjari', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.ht-color {
+    color: #9fb7ff;
+}
+
+/*** HEADER ***/
+
+#header-pai{
+    z-index: 10;
+    margin: 0;
+}
+#header-top {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 9%;
+    filter: drop-shadow(0 0 10px #0003);
+    display:flex; 
+    align-items: center;
+}
+
+#header-title a {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5vmin;
+    float: left;
+    vertical-align: middle;
+}
+
+#header-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+#header-nav ul {
+    float: right;
+    display: flex;
+    margin-top: 15px;
+}
+
+#header-nav li {
+    margin: 0 8px;
+
+}
+
+#header-nav a {
+    font-size: .9rem;
+    transition: .5s;
+}
+
+
+#header-nav a:hover {
+    color: #3869ff;
+    background: transparent;
+    font-weight: 900;
+    display: block;
+    transition: .5s;
+}
+
+#header-nav header-login:hover {
+    border: none;
+}
+
+#header-link{
+    border: 1px solid #ffffff;
+    padding: 10px 15px;
+    border-radius: 7vmin;
+    background-color: #9fb7ff;
+    font-size: 3vmin;
+    font-weight: 900;
+    transition: .5s;
+}
+
+#logo-ht{
+    float: left;
+}
+
+#header-ht{
+    float: none
+}
+
+
+/*** MAIN ***/
+#main-link {
+    border: 1px solid #9fb7ff;
+    padding: 12px 30px;
+    border-radius: 70px;
+    background-color: #9fb7ff;
+    font-size: 3vmin;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)),
+        url(../imagens/death-valley-3133502.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    }
+
+
+#main-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size:20vmin;
+    color:black
+}
+
+#main-text {
+    font-size: 5vmin;
+}
+
+
+#main-link:hover {
+    background: transparent;
+    color:#fff;
+    border: 1px solid #ffffff;
+}
+
+/**** DIFERENCIAL ***/
+#diferencial {
+    width: 80%;
+    min-height: 85vh;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    z-index: -1;
+    filter: drop-shadow(0 0 10px #0003);
+}
+
+.diferencial-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 6vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: #9fb7ff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/*** FOOTER ***/
+
+footer{
+  width: 100%;
+  height: 7vh;
+  background-color: #9fb7ff;
+  position: fixed;
+  bottom: 0;
+  display:flex; 
+  align-items: center;
+}
+
+#footer-row{
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+}
+
+footer h2 {
+  font-size:2vmin;
+  float: left;
+}
+
+#footer-h2 span{
+  font-family: 'Permanent Marker', cursive;
+}
+
+#footer-div{
+  margin: #9fb7ff;
+  min-height: 30px;
+  display: inline-block;
+  padding-left: auto;
+  margin: auto 0 auto auto;
+}
+
+#redes-sociais{
+    width: 32px;
+    height: 32px;    
+    float: right;   
+    display: flex;
+    padding-left: auto;
+    margin: auto 0 auto 0;
+}
+
+#facebook{
+    margin-left: auto;
+    margin-right: 0; 
+}
+
+#twitter{
+  margin-left: 5px;
+  margin-right: 0; 
+}
+
+#linkedin{
+  margin-left: 5px;
+  margin-right: 0; 
+}
+
+#instagram{
+  margin-left: 5px;
+  margin-right: 5px; 
+}
+
+@media screen and (max-width: 480px) {
+    #header-title{
+        display: none;
+    };
+}
